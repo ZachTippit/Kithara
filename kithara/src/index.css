@@ -1,0 +1,133 @@
+:root {
+  --primary-font: blue;
+  --secondary-color: lightblue;
+  --desktop-side-pad: 120px;
+  --primary-bg: #F9F9FC;
+  --secondary-bg: white;
+  --accent-color: #6438F7;
+  --header-pad: 40px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.center{
+  text-align: center;
+}
+
+#Nav{
+  position: fixed;
+  top: 0;
+  background-color: var(--primary-bg);
+  width: 100%;
+  z-index: 2;
+  padding-left: var(--desktop-side-pad);
+  padding-right: var(--desktop-side-pad);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__right > button:not(:last-of-type){
+  margin-right: 30px;
+}
+
+.navButton{
+  background: 0;
+  border: 0;
+  padding: 0;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+#NavGrid{
+  width: 100%;
+}
+
+.landing{
+  background-color: var(--primary-bg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+  padding-left: var(--desktop-side-pad);
+  padding-right: var(--desktop-side-pad);
+}
+
+.about{
+  background-color: var(--secondary-bg);
+}
+
+.services{
+  background-color: var(--primary-bg);
+}
+
+.projects{
+  background-color: var(--secondary-bg);
+}
+
+.project-text{
+  position: relative;
+  top: 70%;
+  font-weight: 700;
+}
+
+.contact{
+  background-color: var(--primary-bg);
+}
+
+.section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: var(--desktop-side-pad);
+  padding-right: var(--desktop-side-pad);
+}
+
+.section > h2 {
+  color: var(--accent-color);
+  font-weight: 700;
+  padding-top: var(--header-pad);
+  padding-bottom: var(--header-pad);
+}
+
+@media only screen and (max-width: 700px){
+  .section {
+      padding-bottom: 250px;
+      padding-top: 250px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .section {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .section {
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  .section {
+      padding-left: 80px;
+      padding-right: 80px;
+  }
+}
