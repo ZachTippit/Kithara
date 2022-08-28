@@ -10,6 +10,10 @@
   --topMargin: 20px;
 }
 
+html{
+  overflow-x: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -168,6 +172,10 @@ code {
   .section {
       padding-bottom: 250px;
       padding-top: 250px;
+  }
+
+  .section > img {
+    width: 100%;
   }
 }
 
