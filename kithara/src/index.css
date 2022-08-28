@@ -64,7 +64,6 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 200px;
   padding-left: var(--desktop-side-pad);
   padding-right: var(--desktop-side-pad);
 }
@@ -91,6 +90,7 @@ code {
 
 .about{
   background-color: var(--secondary-bg);
+  padding: 250px 0;
 }
 
 .services{
@@ -113,6 +113,7 @@ code {
 
 .section{
   min-height: 50vh;
+  padding: 200px 0;
   display: flex;
   flex-direction: column;
   position: relative;
