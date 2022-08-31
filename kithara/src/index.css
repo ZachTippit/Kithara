@@ -113,6 +113,7 @@ code {
 
 .contact{
   background-color: var(--primary-bg);
+  text-align: left;
 }
 
 .section{

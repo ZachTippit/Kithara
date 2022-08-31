@@ -3,12 +3,12 @@ import Project from './Project'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import {default as Coding} from '../assets/coding-coffee.png'
+import {default as Connecting} from '../assets/connecting.png'
 
 const Projects = () => {
   return (
     <div className='projects section'>
-        <img src={Coding} loading='lazy' alt='about-header-img' />
+        <img src={Connecting} loading='lazy' alt='about-header-img' />
         <h2>Notable Projects</h2>
         <Container>
             <Row>

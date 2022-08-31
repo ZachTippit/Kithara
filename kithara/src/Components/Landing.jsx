@@ -20,7 +20,7 @@ const Landing = () => {
         </Row>
         <Row>
           <Col>
-            <button className='connectButton'>Let's Connect!</button>
+            <button className='connectButton'>Let's Connect!</button>      
           </Col>
         </Row>
       </Container>
