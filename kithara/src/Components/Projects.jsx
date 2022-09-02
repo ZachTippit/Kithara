@@ -2,7 +2,7 @@ import React from 'react'
 import Project from './Project'
 import '../projects.css'
 import {default as Connecting} from '../assets/connecting.png'
-import {default as Gabbie} from '../assets/gabbie-text.svg'
+import {default as Gabbie} from '../assets/gabbie-logo.svg'
 import {default as PropTerra} from '../assets/propterra.svg'
 import {default as Wideman} from '../assets/wideman.svg'
 

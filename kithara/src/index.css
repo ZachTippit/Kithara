@@ -95,15 +95,26 @@ code {
   margin-top: var(--topMargin);
 }
 
+.connectButtonContainer{
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
 .connectButton{
   background: var(--accent-color);
   color: var(--secondary-bg);
-  width: 200px;
-  padding: 10px;
+  width: 300px;
+  padding: 30px;
   font-weight: 700;
+  font-size: 1.2rem;
   border: 0;
-  border-radius: 25px;
-  margin-top: var(--topMargin);  
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.connectButton:hover{
+  text-decoration: none;
+  color: var(--secondary-bg);
 }
 
 .about{

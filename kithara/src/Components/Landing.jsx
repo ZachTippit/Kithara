@@ -3,7 +3,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { Player } from '@lottiefiles/react-lottie-player';
+import {Link, animateScroll as scroll} from 'react-scroll';
 import manCoding from '../assets/manCoding.json'
+
+const offset = -70
+const duration = 500
 
 const Landing = () => {
   return (
@@ -18,9 +22,19 @@ const Landing = () => {
             <Player src={manCoding} autoplay loop speed={0.125}/>
           </Col>
         </Row>
-        <Row>
+        <Row className='connectButtonContainer'>
           <Col>
-            <button className='connectButton'>Let's Connect!</button>      
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={offset}
+              duration={duration}
+              className='connectButton'
+            >
+              Let's Connect!
+            </Link>      
           </Col>
         </Row>
       </Container>
