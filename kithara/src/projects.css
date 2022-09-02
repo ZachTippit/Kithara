@@ -1,0 +1,39 @@
+:root{
+
+  --propterra-bg: #202020;
+  --propterra-text: #ffc03a;
+  --gabbie-proj-bg: #adbea1;
+  --wideman-proj-bg: #2f4550;
+  --wideman-text: white;
+}
+
+.gabbie{
+    background-color: var(--gabbie-proj-bg);
+  }
+  
+.gabbie > p{
+    color: black;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.propterra{
+    background-color: var(--propterra-bg);
+
+}
+
+.propterra > p{
+    color: var(--propterra-text);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.wideman{
+  background-color: var(--wideman-proj-bg);
+}
+
+.wideman > p {
+  color: var(--wideman-text);
+  font-weight: 700;
+  margin-top: 1rem;
+}

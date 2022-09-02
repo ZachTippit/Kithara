@@ -1,16 +1,12 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 
-const Project = ({image, text}) => {
+const Project = ({bgClass, link, logo, text}) => {
   return (
-    <Card className='project-card'>
-        <Card.Img src={image} alt='Card bg' />
-        <Card.ImgOverlay>
-            <Card.Text className='project-text'>
-                {text}
-            </Card.Text>
-        </Card.ImgOverlay>
-    </Card>
+    <a className={`project ${bgClass}`} href={link}>
+      <img src={logo} className='project-img' alt='img' loading='lazy' />
+      <p>{text}</p>
+    </a>
   )
 }
 
