@@ -1,8 +1,8 @@
-import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
 import { Link, animateScroll as scroll} from 'react-scroll';
+import {default as logo} from '../assets/kithara-logo.png'
 
 const offset = -70
 const duration = 500
@@ -15,7 +15,19 @@ const Nav = () => {
             {/* In Row on Desktop, Stacked in Mobile */}
             <Row>
                 <Col xs={12} md>
-                    <button className='navButton logo' href='https://www.kithara.dev'>Kithara Ltd.</button></Col>
+                    <Link
+                        activeClass="active"
+                        to="landing"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={duration}
+                        className='nav-top'
+                    >
+                        <img src={logo} className='nav-logo' alt='kithara-logo' />
+                        <button className='navButton logo' href='https://www.kithara.dev'>Kithara Ltd.</button>
+                    </Link>
+                </Col>
                 <Col xs={12} md className='header__right'>
                     <Link
                         activeClass="active"

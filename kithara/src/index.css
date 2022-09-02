@@ -1,12 +1,11 @@
 :root {
-  --primary-font: blue;
   --secondary-color: lightblue;
   --desktop-side-pad: 120px;
   --mob-side-pad: 20px;
   --primary-bg: #F9F9FC;
   --secondary-bg: white;
   --accent-color: #6438F7;
-  --header-pad: 40px;
+  --header-pad: 60px;
   --topMargin: 20px;
 
 }
@@ -39,12 +38,11 @@ code {
   top: 0;
   background-color: var(--primary-bg);
   width: 100%;
-  z-index: 2;
+  z-index: 20;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: var(--desktop-side-pad);
   padding-right: var(--desktop-side-pad);
-
 }
 
 .header__right > a:not(:last-of-type){
@@ -60,6 +58,15 @@ code {
 .nav-item:hover{
   border-bottom: 1px solid var(--accent-color);
   color: var(--accent-color);
+  cursor: pointer;
+}
+
+.nav-logo{
+  max-height: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-top{
   cursor: pointer;
 }
 
@@ -110,6 +117,7 @@ code {
   border: 0;
   border-radius: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .connectButton:hover{
@@ -124,6 +132,37 @@ code {
 
 .services{
   background-color: var(--primary-bg);
+}
+
+.services:last-child{
+  margin-top: 30px;
+}
+
+.services > p{
+  margin-bottom: 10%;
+}
+
+.service{
+  margin-top: 10% !important;
+}
+
+.service-description > h3{
+  margin-top: 3rem;
+}
+
+.service-description > p{
+  margin-top: 6rem;
+  margin-bottom: 25%;
+}
+
+.next-service{
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+.next-service > img {
+  margin-bottom: 40%;
 }
 
 .projects{
@@ -178,6 +217,18 @@ code {
   text-align: left;
 }
 
+.hubspotForm{
+  margin: 4rem auto;
+  width: 40%;
+}
+
+.copyright{
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--accent-color)
+
+}
 .section{
   min-height: 50vh;
   padding: 200px 0;
@@ -198,21 +249,46 @@ code {
   object-fit: contain;
 }
 
-.section > h2 {
+.section-txt-header{
+  width: 100%;
   color: var(--accent-color);
+  margin-bottom: var(--header-pad);
+}
+
+.section-txt-header > img{
+  height: 3rem;
+}
+
+.section-txt-header > h2{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2rem;
   font-weight: 700;
-  padding-top: var(--header-pad);
-  padding-bottom: var(--header-pad);
+  padding-left: 1rem;
 }
 
 .accented{
   color: var(--accent-color);
 }
 
+@media only screen and (max-width: 4000px){
+  .next-service{
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 1400px){
   .section, .nav {
       padding-left: 80px;
       padding-right: 80px;
+  }
+
+  .next-service{
+    visibility: hidden;
+  }
+
+  .hubspotForm{
+    width: 50%;
   }
 }
 
@@ -225,6 +301,9 @@ code {
     display: flex;
     flex-direction: column;
 }
+.next-service{
+  visibility: hidden;
+}
 }
 
 @media only screen and (max-width: 800px){
@@ -232,13 +311,20 @@ code {
       padding-left: 40px;
       padding-right: 40px;
   }
+  .next-service{
+    visibility: visible;
+  }
 }
 
 
 @media only screen and (max-width: 700px){
-  .section {
-      padding-bottom: 250px;
-      padding-top: 250px;
+  .section:not(:last-child) {
+      padding-bottom: 200px;
+      padding-top: 100px;
+  }
+
+  .contact{
+    padding-bottom: 1rem;
   }
 
   .section > img {
@@ -252,7 +338,66 @@ code {
   .header__right {
     padding-top: 0.5rem;
   }
+
+  .service:not(:first-of-type){
+    margin-top: 90% !important;
+  }
+
+  .service-description > h3{
+    margin-top: 2rem;
+  }
+  
+  .service-description > p{
+    margin-top: 4rem;
+  }
+
+  .next-service{
+    visibility: visible !important;
+  }
+
+  .hubspotForm{
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 500){
+  .next-service{
+    visibility: visible  !important;
+  }
+}
+
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 4s ease-in-out infinite both;
+	        animation: pulsate-fwd 4s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 
 

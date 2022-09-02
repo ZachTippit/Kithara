@@ -4,6 +4,8 @@
   --propterra-text: #ffc03a;
   /* --gabbie-proj-bg: #adbea1; */
   --gabbie-proj-bg: #6aa0f7;
+  --lemony-bg: #FFFDD0;
+  --lemony-text: #e00f73;
   --wideman-proj-bg: #2f4550;
   --wideman-text: white;
 }
@@ -16,6 +18,16 @@
     color: black;
     font-weight: 700;
     margin-top: 1rem;
+}
+
+.lemony{
+  background-color: var(--lemony-bg);
+}
+
+.lemony > p{
+  color: var(--lemony-text);
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .propterra{

@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -11,7 +10,7 @@ const duration = 500
 
 const Landing = () => {
   return (
-    <div className='landing section'>
+    <div id='landing' className='landing section'>
       <Container>
         <Row>
           <Col className='landingTxt'>
