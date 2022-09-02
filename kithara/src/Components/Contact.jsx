@@ -11,8 +11,11 @@ const Contact = () => {
         <img src={Connect} alt='contact-header-txt-icon' />
         <h2>Let's Connect!</h2>
       </div>
-      <p>Starting a <span className='accented'>new business</span> or run an <span className='accented'>interesting non-profit</span> you need technical help with? Let's chat!</p>
-      <p>Open to <b>contract work</b>, recurring retainer-based <b>IT services</b>, and on a <b>project-to-project basis</b>.</p>
+      <p>
+        Starting a <span className='accented'>new business</span> or run an <span className='accented'>interesting non-profit</span> you need technical help with? Let's chat!
+        <br/><br/>
+        Open to <b>contract work</b>, recurring retainer-based <b>IT services</b>, and on a <b>project-to-project basis</b>.
+      </p>
       <div className='hubspotForm'>
         <HubspotForm
           portalId='22622323'

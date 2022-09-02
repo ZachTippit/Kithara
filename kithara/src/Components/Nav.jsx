@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import { Link, animateScroll as scroll} from 'react-scroll';
 import {default as logo} from '../assets/kithara-logo.png'
 
-const offset = -70
+const offset = -200
 const duration = 500
 
 
@@ -16,7 +16,7 @@ const Nav = () => {
             <Row>
                 <Col xs={12} md>
                     <Link
-                        activeClass="active"
+                        activeClass='null'
                         to="landing"
                         spy={true}
                         smooth={true}

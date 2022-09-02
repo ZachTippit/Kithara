@@ -53,6 +53,7 @@ code {
   text-decoration: none;
   font-weight: 700;
   color: var(--accent-color);
+  padding-bottom: 2px;
 }
 
 .nav-item:hover{
@@ -68,6 +69,10 @@ code {
 
 .nav-top{
   cursor: pointer;
+}
+
+.active{
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .logo{
@@ -151,18 +156,12 @@ code {
 }
 
 .service-description > p{
-  margin-top: 6rem;
-  margin-bottom: 25%;
+  margin-top: 5rem;
+  margin-bottom: 10%;
 }
 
 .next-service{
   text-decoration: none;
-  transform: scale(1.1);
-  transition: 1s ease-in-out;
-}
-
-.next-service > img {
-  margin-bottom: 40%;
 }
 
 .projects{
@@ -214,6 +213,10 @@ code {
 
 .contact{
   background-color: var(--primary-bg);
+  text-align: center;
+}
+
+.contact > p{
   text-align: left;
 }
 
@@ -275,6 +278,13 @@ code {
   .next-service{
     visibility: hidden;
   }
+
+  
+  .section > p{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 1400px){
@@ -300,10 +310,11 @@ code {
   .project-grid {
     display: flex;
     flex-direction: column;
-}
-.next-service{
-  visibility: hidden;
-}
+  }
+  .next-service{
+    visibility: hidden;
+  }
+
 }
 
 @media only screen and (max-width: 800px){
@@ -348,13 +359,17 @@ code {
   }
   
   .service-description > p{
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .next-service{
     visibility: visible !important;
   }
 
+  .next-service > img {
+    margin-top: 3rem;
+    margin-bottom: 40%;
+  }
   .hubspotForm{
     width: 100%;
   }
@@ -373,30 +388,30 @@ code {
 
 @-webkit-keyframes pulsate-fwd {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 @keyframes pulsate-fwd {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
