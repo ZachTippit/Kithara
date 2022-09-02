@@ -3,7 +3,7 @@ import {default as GlobeStare} from '../assets/globe-stare.png'
 
 const About = () => {
   return (
-    <div className='about section'>
+    <div id='about' className='about section'>
       <img src={GlobeStare} loading='lazy' alt='about-header-img' />
       <h2>About Kithara</h2>
       <p>Kithara is a technical consultancy headquartered in Denver, Colorado. We specialize in working with founder-stage businesses to set up your technical infrastructure to maximize your ability to scale from the get go.</p>

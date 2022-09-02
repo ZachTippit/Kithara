@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 
 const Contact = () => {
   return (
-    <div className='contact section'>
+    <div id='contact' className='contact section'>
       <h2>Stay Connected</h2>
       <p>Starting a <span className='accented'>new business</span> or run an <span className='accented'>interesting non-profit</span> you need technical help with? Let's chat!</p>
       <p>Open to <b>contract work</b>, recurring retainer-based <b>IT services</b>, and on a <b>project-to-project basis</b>.</p>

@@ -2,6 +2,11 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
+import { Link, animateScroll as scroll} from 'react-scroll';
+
+const offset = -70
+const duration = 500
+
 
 const Nav = () => {
   return (
@@ -10,12 +15,52 @@ const Nav = () => {
             {/* In Row on Desktop, Stacked in Mobile */}
             <Row>
                 <Col xs={12} md>
-                    <button className='navButton' href='https://www.kithara.dev'>kithara.dev</button></Col>
+                    <button className='navButton logo' href='https://www.kithara.dev'>Kithara Ltd.</button></Col>
                 <Col xs={12} md className='header__right'>
-                    <button className='navButton'>About</button>
-                    <button className='navButton'>Service</button>
-                    <button className='navButton'>Projects</button>
-                    <button className='navButton'>Contact</button>
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={duration}
+                        className='nav-item'
+                    >
+                        About
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="services"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={duration}
+                        className='nav-item'
+                    >
+                        Services
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={duration}
+                        className='nav-item'
+                    >
+                        Projects
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={offset}
+                        duration={duration}
+                        className='nav-item'
+                    >
+                        Contact
+                    </Link>
                 </Col>
             </Row>
         </Container>

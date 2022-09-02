@@ -44,18 +44,31 @@ code {
   padding-bottom: 20px;
   padding-left: var(--desktop-side-pad);
   padding-right: var(--desktop-side-pad);
+
 }
 
-.header__right > button:not(:last-of-type){
+.header__right > a:not(:last-of-type){
   margin-right: 30px;
 }
 
-.navButton{
+.nav-item{
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.nav-item:hover{
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.logo{
   background: 0;
   border: 0;
   padding: 0;
   font-weight: 700;
-  color: var(--accent-color);
+  color: #202020;
 }
 
 #NavGrid{
@@ -219,6 +232,14 @@ code {
 
   .section > img {
     width: 100%;
+  }
+
+  .nav{
+    padding-right: 0;
+  }
+
+  .header__right {
+    padding-top: 0.5rem;
   }
 }
 
