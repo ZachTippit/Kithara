@@ -21,7 +21,7 @@ const Contact = () => {
           portalId='22622323'
           formId='a3c107f2-f78e-4e1d-9051-687838b5c99d'
           onSubmit={() => console.log('Submit!')}
-          onReady={(form) => console.log('Form ready!')}
+          // onReady={(form) => console.log('Form ready!')}
           loading={<div>Loading...</div>} 
         />
       </div>
